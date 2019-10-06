@@ -139,94 +139,37 @@
     <div class="row">
         <div class="col-md-8 main">
 
-            <!-- ROOM 1 -->
+            <!-- ROOMS -->
+            {{#each placesFiltered}}
             <div class="card clearfix pointer active">
                 <div class="room-image">
-                    <img src="images/cocos/room_1.png" width="100%" />
+                    <img src="{{picture}}" width="100%" />
                 </div>
 
                 <div class="room-content">
-                    <h5 class="form-group">Mini Dreamy Room</h5>
-                    <p class="form-group">Generous and comfortable these modern furnished rooms offer two queen-size beds and are on the first floor.</p>
+                    <h5 class="form-group">{{title}}</h5>
+                    <p class="form-group">{{description}}</p>
 
-                    <p class="form-group">Size: 25m2</p>
+                    <p class="form-group">Size: {{size}}m2</p>
 
                     <div class="room-info">
                         <div class="item">
                             <span class="inline-block">
                                 <img src="images/icons/double-bed.svg" width="40">
                             </span>
-                            <div>Beds: 1</div>
+                            <div>Beds: {{beds}}</div>
                         </div>
-                        <div class="item">People: 2</div>
+                        <div class="item">People: {{people}}</div>
                         <div class="item price text-right">
                             <span class="line-through">€400</span>
-                            €350
+                            €{{price}}
                     </div>
                     </div>
                 </div>
 
             </div>
+            {{/each}}
 
-            <!-- ROOM 2 -->
-            <div class="card clearfix pointer">
-                <div class="room-image">
-                    <img src="images/cocos/room_2.png" width="100%" />
-                </div>
-
-                <div class="room-content">
-                    <h5 class="form-group">Sweet Bungalow</h5>
-                    <p class="form-group">The perfect blend of comfort and culture, our superior room with a central garden view has the stunning, and comes with a double bed.</p>
-
-                    <p class="form-group">Size: 50m2</p>
-
-                    <div class="room-info">
-                        <div class="item">
-                            <span class="inline-block">
-                                <img src="images/icons/double-bed.svg" width="40">
-                            </span>
-                            <div>Beds: 1</div>
-                        </div>
-                        <div class="item">People: 2</div>
-                        <div class="item price text-right">
-                            <span class="line-through">€500</span>
-                            €400
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- ROOM 3 -->
-            <div class="card clearfix pointer">
-                <div class="room-image">
-                    <img src="images/cocos/room_3.png" width="100%" />
-                </div>
-
-                <div class="room-content">
-                    <h5 class="form-group">Los Cocos Suite</h5>
-                    <p class="form-group">If you want a little extra from your stay, you might like our superior rooms. A garden view room has a private patio and a double bed.</p>
-
-                    <p class="form-group">Size: 125m2</p>
-
-                    <div class="room-info">
-                        <div class="item">
-                            <span class="inline-block">
-                                <img src="images/icons/double-bed.svg" width="40">
-                            </span>
-                            <div>Beds: 3</div>
-                        </div>
-                        <div class="item">People: 4</div>
-                        <div class="item price text-right">
-                            <span class="line-through">€750</span>
-                            €600
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
 
         <!-- SIDEBAR -->
         <div class="col-md-4 sidebar">

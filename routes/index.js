@@ -1,7 +1,8 @@
 const express = require('express');
 const router  = express.Router();
 
-const hotels = require('../bin/seed')
+const hotels = require('../public/seed')
+const  sortedPlaces = require('../sorting/sortedPlaces')
 
 /* GET home page */
 router.get('/', (req, res) => {
@@ -10,7 +11,9 @@ router.get('/', (req, res) => {
   const checkOut = new Date(+new Date() + 86400000).toJSON().slice(0,10)
   const adults = 1
   const children = 1
-  res.render('index', {hotels, checkIn, checkOut, adults, children})
+  const placesFiltered = hotels.filter( places =>  places.people >= 2)
+
+  res.render('index', {placesFiltered, checkIn, checkOut, adults, children})
  
   
 })

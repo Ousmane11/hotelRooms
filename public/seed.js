@@ -7,7 +7,8 @@ const hotels = [
     beds: 1,
     people: 2,
     price: 125,
-    picture: "/public/images/cocos/room_1.png"
+    picture: "./images/cocos/room_1.png"
+    
   },
   {
     title: "Mini Dreamy Room",
@@ -17,7 +18,7 @@ const hotels = [
     beds: 1,
     people: 2,
     price: 150,
-    picture: "/public/images/cocos/room_3.png"
+    picture: "./images/cocos/room_3.png"
   },
   {
     title: "Luxury Suite",
@@ -27,7 +28,7 @@ const hotels = [
     beds: 3,
     people: 4,
     price: 500,
-    picture: "/public/images/cocos/room_2.png"
+    picture: "./images/cocos/room_2.png"
   },
   {
     title: "Super Suite",
@@ -37,7 +38,7 @@ const hotels = [
     beds: 2,
     people: 4,
     price: 600,
-    picture: "/public/images/cocos/room_2.png"
+    picture: "./images/cocos/room_2.png"
   },
   {
     title: "Small Dreamy Room",
@@ -47,7 +48,7 @@ const hotels = [
     beds: 1,
     people: 2,
     price: 100,
-    picture: "/public/images/cocos/room_1.png"
+    picture: "./images/cocos/room_1.png"
   },
   {
     title: "Los Cocos Suite",
@@ -57,7 +58,7 @@ const hotels = [
     beds: 4,
     people: 6,
     price: 700,
-    picture: "/public/images/cocos/room_2.png"
+    picture: "./images/cocos/room_2.png"
   },
   {
     title: "Bungalow",
@@ -67,7 +68,7 @@ const hotels = [
     beds: 2,
     people: 4,
     price: 120,
-    picture: "/public/images/cocos/room_3.png"
+    picture: "./images/cocos/room_3.png"
   },
   
 ];
