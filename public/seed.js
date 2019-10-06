@@ -36,7 +36,7 @@ const hotels = [
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquid ex ea commodi consequat",
     size: 60,
     beds: 2,
-    people: 4,
+    people: 8,
     price: 600,
     picture: "./images/cocos/room_2.png"
   },

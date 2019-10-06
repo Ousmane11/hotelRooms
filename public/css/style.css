@@ -1,0 +1,24 @@
+.inAndOut {
+  margin-right: 3%
+}
+
+.else {
+  display: flex;
+  align-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 10vh
+}
+
+.sidebar {
+  position: absolute;
+  top: 87.5%;
+  right: 1%;
+}
+
+@media (max-width:996px) {
+  .sidebar {
+    display: block;
+    position: relative
+  }
+}

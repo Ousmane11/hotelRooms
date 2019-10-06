@@ -42,7 +42,8 @@ app.locals.title = 'Los Cocos Bungalows';
 
 
 const index = require('./routes/index');
-app.use('/', index);
+app.use('/', index)
+app.use('/modify', index)
 
 
 module.exports = app;
