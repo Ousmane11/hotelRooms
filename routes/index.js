@@ -19,16 +19,16 @@ router.get("/", (req, res) => {
 
 router.get("/modify", (req, res) => {
   // 3. Búsqueda de habitación con formulario
-  const { checkIn, checkOut, adults, children } = req.body;
-  console.log(`people number is ${adults}`)
+  const { checkIn, checkOut, adults, children } = req.query;
+  
   const numberAdults = parseFloat(adults);
   const numberChildren = parseFloat(children);
   const people = numberAdults + numberChildren;
   console.log(`people number is ${people}`)
-  // pendant to apply asynchrony
-  const placesFiltered = hotels.filter(places => places.people >= people);
-   sortedPlaces(placesFiltered);
   
+  const placesFiltered = hotels.filter(places => places.people >= people);
+  sortedPlaces(placesFiltered);
+  console.log(`the places are ${placesFiltered}`)
   res.render("index", { placesFiltered, checkIn, checkOut, adults, children });
 });
 

@@ -8,7 +8,6 @@ const hotels = [
     people: 2,
     price: 125,
     picture: "./images/cocos/room_1.png"
-    
   },
   {
     title: "Mini Dreamy Room",

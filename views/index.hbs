@@ -73,11 +73,11 @@
         <div class="engine-wrapper">
             <div class="container text-center">
 
-                <form id="search" class="form-inline" action="/modify" method="GET">
+                <form id="search" class="form-inline" action="/modify" method="get">
 
                     <div class="form-group inAndOut">
                         <div class="input-group date" data-date-format="dd/mm/yyyy">
-                            <input id="checkin" type="date" class="form-control" value="{{checkIn}}">
+                            <input id="checkIn" name="checkIn" type="date" class="form-control" value="{{checkIn}}">
                             <div class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
                             </div>
@@ -86,7 +86,7 @@
 
                     <div class="form-group inAndOut">
                         <div class="input-group date " data-date-format="dd/mm/yyyy">
-                            <input id="checkout" type="date" class="form-control" value={{checkOut}}>
+                            <input id="checkOut" name="checkOut" type="date" class="form-control" value={{checkOut}}>
                             <div class="input-group-addon">
                                 <span class="glyphicon glyphicon-calendar"></span>
                             </div>
@@ -95,7 +95,7 @@
 
 
                     <div class="form-group select-inline select">
-                        <select class="form-control" placeholder="Adults" id="adults">
+                        <select class="form-control" placeholder="Adults" id="adults" name="adults" form="search">
                             <option value="{{adults}}" selected>Adults: {{adults}}</option>
                             <option value="2">Adults: 2</option>
                             <option value="3">Adults: 3</option>
@@ -108,7 +108,7 @@
                         </select>
                     </div>
                     <div class="form-group select-inline select">
-                        <select class="form-control" placeholder="Children" id="children">
+                        <select class="form-control" placeholder="Children" id="children" name="children" form="search">
                             <option value="{{children}}" selected>Children: {{children}}</option>
                             <option value="2">Children: 2</option>
                             <option value="3">Children: 3</option>
@@ -123,7 +123,7 @@
 
 
                     <div class="form-group">
-                        <button type="submit" href="#" class="btn btn-primary">Modify</button>
+                        <button type="submit" class="btn btn-primary">Modify</button>
                     </div>
                 </form>
 
