@@ -22,3 +22,15 @@
     position: relative
   }
 }
+
+/* //Reservations view */
+.margin-top{
+  margin-top: 8%;
+}
+
+.reservation {
+  text-align: center;
+}
+.card h5{
+  color: #4682B4
+}

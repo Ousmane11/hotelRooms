@@ -192,7 +192,6 @@
          {{#each placesFiltered}}
          {{#if @first}}
           <div class="col-md-4 sidebar">
-
             <div class="card">
                 <h2>Reservation Summary</h2>
                 <div class="clearfix">
@@ -251,12 +250,18 @@
                             {{/each}}
                         </div>
                     </div>
-
-                    <a href="#" class="btn btn-primary btn-group-justified">
+                     <form id="book" action="/booking/{{placesFiltered.0.price}}/{{placesFiltered.0.title}}/{{checkIn}}/{{checkOut}}/{{adults}}/{{children}}" method="GET">                                   
+                    <div class="card-content">
+                        <p class="main">Promo Code</p>
+                        <input type="text" name="promo">
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-group-justified">
                         Save
-                    </a>
+                    </button>
+                    </form>
                 </div>
             </div>
+            
         </div>
     {{/if}}
 
